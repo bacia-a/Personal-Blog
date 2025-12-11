@@ -2,11 +2,11 @@
   <div class="hobbies-section">
     <div class="container">
       <h2 class="main-title">我的爱好</h2>
-      
+
       <!-- 标签页导航 -->
       <div class="tabs-nav">
-        <button 
-          v-for="tab in tabs" 
+        <button
+          v-for="tab in tabs"
           :key="tab.type"
           class="tab-btn"
           :class="{ active: activeTab === tab.type }"
@@ -30,18 +30,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import GamesList from './GamesList.vue'
-import MusicPlayer from './MusicPlayer.vue'
-import AnimeList from './AnimeList.vue'
+import { ref } from "vue";
+import GamesList from "./GamesList.vue";
+// import MusicPlayer from './MusicPlayer.vue'
+import AnimeList from "./AnimeList.vue";
 
-const activeTab = ref('game')
+const activeTab = ref("game");
 
 const tabs = [
-  { type: 'game', name: '游戏', icon: 'fa-gamepad' },
-  { type: 'music', name: '音乐', icon: 'fa-music' },
-  { type: 'anime', name: '动漫', icon: 'fa-film' }
-]
+  { type: "game", name: "游戏", icon: "fa-gamepad" },
+  // { type: 'music', name: '音乐', icon: 'fa-music' },
+  { type: "anime", name: "动漫", icon: "fa-film" },
+];
 </script>
 
 <style scoped>
@@ -97,13 +97,13 @@ const tabs = [
 .tab-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
-  border-color: #FFB7C5;
+  border-color: #ffb7c5;
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #FFB7C5, #FF69B4);
+  background: linear-gradient(135deg, #ffb7c5, #ff69b4);
   color: white;
-  border-color: #FF69B4;
+  border-color: #ff69b4;
   box-shadow: 0 8px 25px rgba(255, 105, 180, 0.5);
   transform: translateY(-3px);
 }
@@ -144,12 +144,12 @@ const tabs = [
   .main-title {
     font-size: 2rem;
   }
-  
+
   .tabs-nav {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .tab-btn {
     justify-content: center;
   }

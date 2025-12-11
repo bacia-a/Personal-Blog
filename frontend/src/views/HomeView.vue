@@ -5,16 +5,16 @@
     <WorksList />
     <HobbiesList />
     <footer class="footer">
-      <p>&copy; 2024 樱花博客 | 用心记录生活</p>
+      <p>&copy; 樱落 | 用心记录生活</p>
     </footer>
   </div>
 </template>
 
 <script setup>
-import Carousel from '../components/Carousel.vue'
-import UserInfoCard from '../components/UserInfoCard.vue'
-import WorksList from '../components/WorksList.vue'
-import HobbiesList from '../components/HobbiesList.vue'
+import Carousel from "../components/Carousel.vue";
+import UserInfoCard from "../components/UserInfoCard.vue";
+import WorksList from "../components/WorksList.vue";
+import HobbiesList from "../components/HobbiesList.vue";
 </script>
 
 <style scoped>
